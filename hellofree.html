@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script>
+alert("Вас приветствует программа Калькулятор!");
+do {
+	var x = prompt("Продолжить?");
+	if((x=="Да") || (x=="да")) {
+	    var a = parseInt(prompt("Введите первое число: "));
+	    if(isNaN(a)) {
+	    	alert("Не путайте цифры с буквами!");
+	    } else {	 
+	        var k = prompt("Какое действие хотите выполнить?");
+	        if((k=="суммирование") || (k=="суммировать") || (k=="+")) {
+	            var b = parseInt(prompt("Введите второе число: "));
+	             alert(a+b);
+	        } else if((k=="умножить") || (k=="умножение") || (k=="*")) {
+	            var c = parseInt(prompt("Введите второе число: "));
+	            alert(a*c);
+	        } else if((k=="делить") || (k=='деление') || (k=="/")) {
+	            var d = parseInt(prompt("Введите второе число: "));
+	            alert(a/d);
+	        } else if((k=="отнимание") || (k=="отнять") || (k=="-")) {
+	            var e = parseInt(prompt("Введите второе число: "));
+	            alert(a-e);
+	        } else {
+	            alert("Отвечайте четко и ясно!");
+	        }
+	    }
+	} else {
+	    break;
+	}
+} while(true);
+alert("До следующего сеанса)")
+</script>
